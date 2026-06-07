@@ -1,0 +1,148 @@
+  /*🟢🟢🟢🟢🟢🟢เฟส*/
+  /* จัดองค์ประกอบให้อยู่กึ่งกลาง */
+.center-ext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; /* เพิ่มระยะห่างระหว่างข้อความกับปุ่ม */  
+}
+
+
+/* สไตล์สำหรับข้อความ */
+.text-1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #c3d2d9; /* สีตัวอักษร */
+  transform: translate(0px, 4px); /* ระบุทิศทางการเคลื่อนย้ายได้ทั้งในแกน 0 X (แนวนอน) และแกน 10 Y (แนวตั้ง) */
+}
+
+
+/* สไตล์สำหรับปุ่ม */
+.button-1 {
+    margin-top: 10px; /************ขอบด้านบน*************/
+    margin-bottom: 0px; /************ขอบล่าง*************/
+    background-color: #33577F;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 2px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid white; /**เงาสีชายแดนปุ่ม อาจจะทำให้ผมเคลื่อนไหว**/
+   /* border: none; /*ซ้ำกับตัวบน none ปิดเงาสีชายแดนปุ่ม เมื่อเปิดตัวบนให้ปิดตัวล่าง*/  
+    border-radius: 8px; 
+
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;  
+}
+
+
+.button-1:hover {
+    background-color: #5500ff;
+
+
+    box-shadow: 0 1px #666; /******เงาปุ่ม*******/
+    transform: translateY(2px);
+  }  /*🔴🔴🔴🔴🔴🔴สิ้นสุดปุ่มเฟส*/
+
+
+     /*--🟢🟢🟢🟢🟢🟢🟢ปุ่ม messenger Facebook🟢--*/ 
+ .chatbutton { 
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #f7f6f4;
+      border: none;
+      color: #222529;
+      padding: 5px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+     /* font-size: 18px; /**/
+      cursor: pointer;
+      border-radius: 20px;
+      transition-duration: 0.4s;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1000;     
+    }
+    .chatbutton:hover {
+      background-color: #eee;
+    }
+ .fa-facebook-messenger {
+    font-size: 25px;
+   /* font-weight: bold; /**/
+    color: #0084ff;
+}
+ .small-text {
+    font-size: 18px;
+   /* font-weight: bold; /**/
+    color: #222529; /**/
+   /* color: #0a6ef2; /**/
+}
+  /** 🔴🔴🔴🔴🔴🔴🔴 สิ้นสุดปุ่ม messenger Facebook🔴 **/ 
+
+
+
+
+   /*🟢🟢css divโลโก้🟢🟢*/
+@import url('https://fonts.googleapis.com/css?family=Caveat|Righteous&display=swap');
+.my{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+div.a {  /**********🟢🟢🟢🟢🟢🟢🟢 ข้อความโลโก้ 𝐆𝐨𝐨𝐝 𝐒𝐞𝐫𝐢𝐞𝐬 *********/
+  font-family: 'Righteous', cursive;
+  background:url('https://media.giphy.com/media/FE0WTM8BG754I/giphy.gif') center center no-repeat; /*background พื้นหล้งชื่อ 𝐆𝐨𝐨𝐝 𝐒𝐞𝐫𝐢𝐞𝐬*/
+ /* background:url('https://raw.githubusercontent.com/mey2015/image/refs/heads/main/uploads/gif.gif') center center no-repeat; /*สำลอง พื้นหล้งชื่อ 𝐆𝐨𝐨𝐝 𝐒𝐞𝐫𝐢𝐞𝐬*/
+ /* https://media.giphy.com/media/GPqph5wIkJQe6P0x7j/giphy.gif */
+ /* https://raw.githubusercontent.com/mey2015/image/refs/heads/main/uploads/gif.gif */
+ /* background:linear-gradient(to right, #c4c4c4 ,#6a6a6a);  /**/
+/* https://s14.gifyu.com/images/bT8wG.gif /**/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 27px;  /* ขนาดข้อความ🟠 26px; 🟠*/
+  letter-spacing: 1px;
+  background-size: cover;
+  margin: 0px; 
+  color:transparent;  
+
+
+
+
+}
+
+
+#myImg-1 { /**********🟢🟢🟢🟢รูปโลโก้ต่อท้าย 𝐆𝐨𝐨𝐝 𝐒𝐞𝐫𝐢𝐞𝐬 ***/
+   width: 18px; /* กำหนดความกว้างของรูป img🟠 18px 🟠*/
+   transform: translate(2px, 2px); /* ระบุทิศทางการเคลื่อนย้ายได้ทั้งในแกน X (แนวนอน) และแกน Y (แนวตั้ง) */    
+  /* height: 200px; /* กำหนดความสูงของ img */
+  /* background-image: url('images/background.png'); /* ระบุเส้นทางรูปภาพพื้นหลัง */
+   background-size: cover; /* ปรับขนาดรูปภาพให้ครอบคลุมพื้นที่ */
+   background-repeat: no-repeat; /* ไม่ให้รูปภาพซ้ำ */
+  /* margin-left: 1px; /* เพิ่มระยะห่างด้านซ้ายของกล่องขวา */
+  /* margin-right: 2px; /* เพิ่มระยะห่างด้านซ้ายของกล่องซ้าย */
+    }
+
+
+div.b {  /**********🟢🟢🟢🟢🟢🟢🟢 ข้อความข้างล่าง 𝐆𝐨𝐨𝐝 𝐒𝐞𝐫𝐢𝐞𝐬 *********/
+ /* background:url('https://media.giphy.com/media/3o6Ztb45EYezY9x9gQ/giphy.gif') center center no-repeat; /*เปิดเมื่อใช้งาน ปิดชั่วคราว*/
+ /*  -webkit-text-fill-color: transparent; /*ปิดช้่วคราว*/
+   font-family: 'Caveat', cursive; 
+   color:transparent;
+   font-size: 21px;   /* ขนาดข้อความข้างล่าง 28px 𝐆𝐨𝐨𝐝 𝐒𝐞𝐫𝐢𝐞𝐬🟠 ใหม่่ 21px; เดิม 2rem; 🟠*/
+   letter-spacing: 0px; /*ระยะห่างข้อความ 5px*/
+   margin: 0px;  /*ขนาดเดิม 0px*/
+   background:linear-gradient(to right, #c4c4c4 ,#6a6a6a); /*🔵เปิดชั่วคราว*/
+  -webkit-background-clip: text;
+  /* line-height: 0.6; /*🔴*ตัวเก่าไม่มี ปิดชั่วคราว* ตั้งค่าความสูงของเส้นเป็นพิกเซลและเซนติเมตรสำหรับองค์ประกอบ*/  
+} /*จบcssโลโก้*/
+
+
+
+
+
