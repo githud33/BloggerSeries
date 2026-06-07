@@ -1,5 +1,5 @@
 var script = document.createElement('script');
 // ชี้ทางไปหาไฟล์ตัวจริงในโฟลเดอร์ core
-script.src = 'https://githud33.github.io/BloggerSeries/ล้างแคช/ข้อความแนะนำให้ติดตั้งส่วนขยายuBlockOrigin.js?t=' + new Date().getTime();
+script.src = 'https://githud33.github.io/BloggerSeries/ไฟล์หลัก/ข้อความแนะนำให้ติดตั้งส่วนขยายuBlockOrigin.js?t=' + new Date().getTime();
 script.defer = true;
 document.head.appendChild(script);
