@@ -1,0 +1,45 @@
+ .bg-A1 {
+      display: flex; /* เปิดใช้งาน Flexbox */
+      justify-content: center; /* จัดกึ่งกลางในแนวนอน */ 
+     /* padding-top: 10px; /*******ปรับความกว้างกล่องด้านบน*********/
+     /* margin-bottom: 10px; /******ระยะห่างขอบล่าง***********/  
+   }
+ .bg-photo-container {
+      text-align: center; /* จัดข้อความในองค์ประกอบให้อยู่ตรงกลาง */
+     /* padding-top: 10px; /*******ปรับความกว้างกล่องด้านบน*********/
+         /*ทำให้โลโก้อยู่ตรงกลางกล่อง123 ปิดเมื่อไม่ใด้เพิ่มขนาด*/
+      display: flex; /*1*/
+      align-items: center; /*2*/
+      justify-content: center; /*3*/
+
+     /* background-color: #08AEEa; /* เปิตใด้ */
+     /* background-image: linear-gradient( 360deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 112, 140, 1) 100% ); /* 🌈เปิตใด้ */
+      background-image: url( 'https://64.media.tumblr.com/dd7fa4d65b90787b4043370818d304b4/tumblr_oifzpuGfGJ1tf8vylo1_1280.pnj' ); /* เปิตใด้ */
+
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 40px; /* 🌈ปรับขนาด background พื้นหลัง 60px*/
+      width:100%;      
+      overflow: hidden; /**/
+     /* position: absolute; /*ปิด*/
+     /* z-index: 1; /*ปิดใด้*/ 
+  }
+
+#logo-1 {  /* 🟢รูป */
+  max-width: 40%; /* 🌈ขนาดรูปที่ใช้ 40% */
+  height: auto;
+  justify-content: center;
+  align-items: center;
+ /* transform: translate(0px, 5px); /* ระบุทิศทางการเคลื่อนย้ายได้ทั้งในแกน 0 X (แนวนอน) และแกน 10 Y (แนวตั้ง) */
+      /* เพื่อให้แน่ใจว่ารูปภาพอยู่กึ่งกลางในแนวนอนและแนวตั้ง */
+  /* width: 200px; /* กำหนดความกว้างของ img 18px*/
+  /* height: 30px; /* กำหนดความสูงของ img */
+  /* background-image: url('images/background.png'); /* ระบุเส้นทางรูปภาพพื้นหลัง */
+  /* background-size: cover; /* ปรับขนาดรูปภาพให้ครอบคลุมพื้นที่ */
+  /* background-repeat: no-repeat; /* ไม่ให้รูปภาพซ้ำ */
+  /* margin-left: 2px; /* เพิ่มระยะห่างด้านซ้ายของกล่องขวา */
+  /* margin-right: 2px; /* เพิ่มระยะห่างด้านซ้ายของกล่องซ้าย */
+  }
+
+
