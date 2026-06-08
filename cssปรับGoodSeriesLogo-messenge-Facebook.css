@@ -84,63 +84,119 @@
   /** 🔴🔴🔴🔴🔴🔴🔴 สิ้นสุดปุ่ม messenger Facebook🔴 **/ 
 
 
-
-
-   /*🟢🟢css divโลโก้🟢🟢*/
+/*🔑🔑🔑🔑*/
+/*🔑โค้ดชุดใหม่🔑*/
+/*🟢🟢css divโลโก้🟢🟢*/
 @import url('https://fonts.googleapis.com/css?family=Caveat|Righteous&display=swap');
-.my{
+.my {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  align-items: center;    /* จัดให้อยู่กึ่งกลางเสมอ */
+  justify-content: center; /* จัดให้อยู่กึ่งกลางเสมอ */
+  flex-wrap: wrap;        /* ป้องกันหน้าจอเบี้ยว */
+/*  flex-direction: column; /*🚑🚑อยากให้รูปกับข้อความโลโก้ ตกมาอยู่คนละแถวให้ลบ /* เครื่องหมายแท็กข้างหน้าออก */  
+
 }
-div.a {  /**********🟢🟢🟢🟢🟢🟢🟢 ข้อความโลโก้ 𝐆𝐨𝐨𝐝 𝐒𝐞𝐫𝐢𝐞𝐬 *********/
+
+div.a {  /**********🟢🟢🟢🟢🟢🟢 ข้อความโลโก้ 𝐆𝐨𝐨𝐝 𝐒𝐞𝐫𝐢𝐞𝐬 *********/
   font-family: 'Righteous', cursive;
-  background:url('https://media.giphy.com/media/FE0WTM8BG754I/giphy.gif') center center no-repeat; /*background พื้นหล้งชื่อ 𝐆𝐨𝐨𝐝 𝐒𝐞𝐫𝐢𝐞𝐬*/
- /* background:url('https://raw.githubusercontent.com/mey2015/image/refs/heads/main/uploads/gif.gif') center center no-repeat; /*สำลอง พื้นหล้งชื่อ 𝐆𝐨𝐨𝐝 𝐒𝐞𝐫𝐢𝐞𝐬*/
- /* https://media.giphy.com/media/GPqph5wIkJQe6P0x7j/giphy.gif */
- /* https://raw.githubusercontent.com/mey2015/image/refs/heads/main/uploads/gif.gif */
- /* background:linear-gradient(to right, #c4c4c4 ,#6a6a6a);  /**/
-/* https://s14.gifyu.com/images/bT8wG.gif /**/
+  background: url('https://media.giphy.com/media/FE0WTM8BG754I/giphy.gif') center center no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 27px;  /* ขนาดข้อความ🟠 26px; 🟠*/
   letter-spacing: 1px;
   background-size: cover;
   margin: 0px; 
-  color:transparent;  
-
-
-
-
+  color: transparent;  
+  display: inline-block;  
+  
+  /* 🛠️ ปรับเพิ่ม: บังคับข้อความอยู่ตรงกลางเสมอ ไม่ว่าจะเปิดหรือปิดรถพยาบาล */
+  text-align: center; 
 }
 
-
 #myImg-1 { /**********🟢🟢🟢🟢รูปโลโก้ต่อท้าย 𝐆𝐨𝐨𝐝 𝐒𝐞𝐫𝐢𝐞𝐬 ***/
-   width: 18px; /* กำหนดความกว้างของรูป img🟠 18px 🟠*/
-   transform: translate(2px, 2px); /* ระบุทิศทางการเคลื่อนย้ายได้ทั้งในแกน X (แนวนอน) และแกน Y (แนวตั้ง) */    
+  width: 18px;            /* กำหนดความกว้างของรูป img🟠 18px 🟠*/
+  height: auto;
+  display: inline-block;
+  background-size: cover; 
+  background-repeat: no-repeat;
+/* 🟠 แยกไอเทมให้พี่ปรับทีละตัวแบบไม่งง 🟠 */
+  margin-top: 0px;    /* 1. ด้านบน: 8px ระยะห่างระหว่าง ตอนปิดรถพยาบาล รูปภาพ กับ ข้อความโลโก้ข้างบน */
+  margin-right: 0px;  /* 2. ด้านขวา: 0px ตอนปิดรถพยาบาล ระยะช่องไฟฝั่งขวาของรูป */
+  margin-bottom: 0px; /* 3. ด้านล่าง: 8px ตอนปิดรถพยาบาล ระยะห่างระหว่าง รูปภาพ กับ ข้อความเรื่องย่อด้านล่าง */
+  margin-left: 1px;  /* 4. ด้านซ้าย: 10px ตอนปิดรถพยาบาล ระยะห่างระหว่าง รูปภาพ กับ ตัวหนังสือคำว่า Good Series */
+}
+
+div.b {  /**********🟢🟢🟢🟢🟢🟢🟢 ข้อความข้างล่าง 𝐆𝐨𝐨𝐝 𝐒𝐞𝐫ีส์ *********/
+  font-family: 'Caveat', cursive; 
+  color: transparent;
+  font-size: 21px;   /* ขนาดข้อความข้างล่าง 21px; 🟠*/
+  letter-spacing: 0px; 
+  margin: 0px;  
+  background: linear-gradient(to right, #c4c4c4 ,#6a6a6a); 
+  -webkit-background-clip: text;
+  
+  text-align: center;     /* จัดให้ข้อความย่อยอยู่ตรงกลางจอ */
+  margin-top: 0px;       /* ของเก่า 10px เพิ่มช่องไฟด้านบนเล็กน้อยเพื่อความสวยงาม */
+  
+  /* 🛠️ ปรับเพิ่ม: สั่งดึงความกว้างให้เต็มหน้าจอตลอดเวลา ป้องกันข้อความบีวตัวตอนเปิดโหมดรถพยาบาล */
+  flex-basis: 100%; 
+} /*จบcssโลโก้*/
+
+
+   /* 🔒🔒โค้ดชุดเก่า🔒🔒 */
+   /*🟢🟢css divโลโก้🟢🟢*/
+/*✅ @import url('https://fonts.googleapis.com/css?family=Caveat|Righteous&display=swap'); /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+/*✅ .my{
+  width: 100%; /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+/*✅  display: flex; /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+/*✅  align-items: center; /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+/*✅  justify-content: center; /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+/*✅  flex-direction: column; /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+/*✅ } /**/
+/*✅ div.a {  /**********🟢🟢🟢🟢🟢🟢🟢 ข้อความโลโก้ 𝐆𝐨𝐨𝐝 𝐒𝐞𝐫𝐢𝐞𝐬 *********/
+/*✅  font-family: 'Righteous', cursive; /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+/*✅  background:url('https://media.giphy.com/media/FE0WTM8BG754I/giphy.gif') center center no-repeat; /*background พื้นหล้งชื่อ 𝐆𝐨𝐨𝐝 𝐒𝐞𝐫𝐢𝐞𝐬*/ /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+ /* background:url('https://raw.githubusercontent.com/mey2015/image/refs/heads/main/uploads/gif.gif') center center no-repeat; /*สำลอง พื้นหล้งชื่อ 𝐆𝐨𝐨𝐝 𝐒𝐞𝐫𝐢𝐞𝐬*/
+ /* https://media.giphy.com/media/GPqph5wIkJQe6P0x7j/giphy.gif */
+ /* https://raw.githubusercontent.com/mey2015/image/refs/heads/main/uploads/gif.gif */
+ /* background:linear-gradient(to right, #c4c4c4 ,#6a6a6a);  /**/
+/* https://s14.gifyu.com/images/bT8wG.gif /**/
+/*✅  -webkit-background-clip: text; /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+/*✅  -webkit-text-fill-color: transparent; /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+/*✅  font-size: 27px;  /* ขนาดข้อความ🟠 26px; 🟠*/ /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+/*✅  letter-spacing: 1px; /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+/*✅  background-size: cover; /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+/*✅  margin: 0px; /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+/*✅  color:transparent;  /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+
+/*✅ } /**/
+
+/*✅#myImg-1 { /**********🟢🟢🟢🟢รูปโลโก้ต่อท้าย 𝐆𝐨𝐨𝐝 𝐒𝐞𝐫𝐢𝐞𝐬 ***/
+/*✅   width: 18px; /* กำหนดความกว้างของรูป img🟠 18px 🟠*/ /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+/*✅   transform: translate(2px, 2px); /* ระบุทิศทางการเคลื่อนย้ายได้ทั้งในแกน X (แนวนอน) และแกน Y (แนวตั้ง) */ /* ✅ตอนใช้ของเก่าเปิดอยู่ */ 
   /* height: 200px; /* กำหนดความสูงของ img */
-  /* background-image: url('images/background.png'); /* ระบุเส้นทางรูปภาพพื้นหลัง */
-   background-size: cover; /* ปรับขนาดรูปภาพให้ครอบคลุมพื้นที่ */
-   background-repeat: no-repeat; /* ไม่ให้รูปภาพซ้ำ */
+  /* background-image: url('images/background.png'); /* ระบุเส้นทางรูปภาพพื้นหลัง */ 
+/*✅   background-size: cover; /* ปรับขนาดรูปภาพให้ครอบคลุมพื้นที่ */ /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+/*✅   background-repeat: no-repeat; /* ไม่ให้รูปภาพซ้ำ */ /* ✅ตอนใช้ของเก่าเปิดอยู่ */
   /* margin-left: 1px; /* เพิ่มระยะห่างด้านซ้ายของกล่องขวา */
   /* margin-right: 2px; /* เพิ่มระยะห่างด้านซ้ายของกล่องซ้าย */
-    }
+/*✅    } /**/
 
 
-div.b {  /**********🟢🟢🟢🟢🟢🟢🟢 ข้อความข้างล่าง 𝐆𝐨𝐨𝐝 𝐒𝐞𝐫𝐢𝐞𝐬 *********/
+/*✅div.b {  /**********🟢🟢🟢🟢🟢🟢โค้ดชุดเก่า🟢 ข้อความข้างล่าง 𝐆𝐨𝐨𝐝 𝐒𝐞𝐫𝐢𝐞𝐬 *********/
  /* background:url('https://media.giphy.com/media/3o6Ztb45EYezY9x9gQ/giphy.gif') center center no-repeat; /*เปิดเมื่อใช้งาน ปิดชั่วคราว*/
  /*  -webkit-text-fill-color: transparent; /*ปิดช้่วคราว*/
-   font-family: 'Caveat', cursive; 
-   color:transparent;
-   font-size: 21px;   /* ขนาดข้อความข้างล่าง 28px 𝐆𝐨𝐨𝐝 𝐒𝐞𝐫𝐢𝐞𝐬🟠 ใหม่่ 21px; เดิม 2rem; 🟠*/
-   letter-spacing: 0px; /*ระยะห่างข้อความ 5px*/
-   margin: 0px;  /*ขนาดเดิม 0px*/
-   background:linear-gradient(to right, #c4c4c4 ,#6a6a6a); /*🔵เปิดชั่วคราว*/
-  -webkit-background-clip: text;
+/*✅   font-family: 'Caveat', cursive; /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+/*✅   color:transparent; /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+/*✅   font-size: 21px;   /* ขนาดข้อความข้างล่าง 28px 𝐆𝐨𝐨𝐝 𝐒𝐞𝐫𝐢𝐞𝐬🟠 ใหม่่ 21px; เดิม 2rem; 🟠*/ /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+/*✅   letter-spacing: 0px; /*ระยะห่างข้อความ 5px*/ /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+/*✅   margin: 0px;  /*ขนาดเดิม 0px*/ /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+/*✅   background:linear-gradient(to right, #c4c4c4 ,#6a6a6a); /*🔵เปิดชั่วคราว*/ /* ✅ตอนใช้ของเก่าเปิดอยู่ */
+/*✅  -webkit-background-clip: text; /* ✅ตอนใช้ของเก่าเปิดอยู่ */
   /* line-height: 0.6; /*🔴*ตัวเก่าไม่มี ปิดชั่วคราว* ตั้งค่าความสูงของเส้นเป็นพิกเซลและเซนติเมตรสำหรับองค์ประกอบ*/  
-} /*จบcssโลโก้*/
+/*✅ } /*จบcssโลโก้*/
+
 
 
 
