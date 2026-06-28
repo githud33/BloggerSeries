@@ -12,3 +12,22 @@
     padding: 2px 5px;
     display: none;    /*ตัวปิด ปิดปุ่มเลีอกตอน*/
         }
+
+/* <style> แยกส่วน */
+  #Video_K { 
+    display: none; /*ข้อความแจ้งเตือนระดับความคมชัด*/
+     } 
+ .bcin { 
+    display: none; /*เส้นข้อความข้างล่าง*/
+     } 
+.center-ext { 
+ /*   display: none; /*ข้อความชี้บอกสมัครเข้ากลุ่ม*/
+     }   
+	.chatbutton { 
+  /*  display: none; /*ข้อความติดต่อแอดมิน*/
+     } 
+	.my { 
+    display: none; /*ข้อความ𝐆𝐨𝐨𝐝𝐒𝐞𝐫𝐢𝐞𝐬ทำเป็นโลโก้*/
+     } 
+    
+ /* </style> */
