@@ -100,7 +100,11 @@
 
 div.a {  /**********🟢🟢🟢🟢🟢🟢 ข้อความโลโก้ 𝐆𝐨𝐨𝐝 𝐒𝐞𝐫𝐢𝐞𝐬 *********/
   font-family: 'Righteous', cursive;
-  background: url('https://media.giphy.com/media/FE0WTM8BG754I/giphy.gif') center center no-repeat;
+  background: url('https://cdn.jsdelivr.net/gh/mey2015/image@main/uploads/giphy.gif') center center no-repeat;
+  /*
+  https://cdn.jsdelivr.net/gh/mey2015/image@main/uploads/450x274gif.gif
+  https://media.giphy.com/media/FE0WTM8BG754I/giphy.gif
+  */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 27px;  /* ขนาดข้อความ🟠 26px; 🟠*/
